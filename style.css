@@ -70,7 +70,7 @@ body {
     inset: 0;
     background: rgb(0,0,0,0.9);
     position: fixed;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     opacity: 0;
