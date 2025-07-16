@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>image gallery</title>
+</head>
+<body>
+  <div class="header">
+    <h1>
+      Image Galley With Filter
+    </h1>
+  </div>
+
+  <div class="filter">
+    <button data-filter="all" class="btn active-button">All</button>
+    <button data-filter="men" class="btn">Men</button>
+    <button data-filter="women" class="btn">Women</button>
+    <button data-filter="kids" class="btn">Kids</button>
+    <button data-filter="shoes" class="btn">Shoes</button>
+  </div>
+
+  <!--Lightbox Overlay-->
+  <div class="lightbox" id="lightboxContainer" onclick="outsideClick(event)">
+    <button class="nav prev" onclick="prevImage(event)">prev</button>
+  <div class="lightbox-content">
+    <img src="/images/image1.jpg" alt="" id="lightbox">
+    <p id="lightboxCaption"></p>
+  </div>
+
+    <button class="nav next" onclick="nextImage(event)">next</button>
+    <span class="close-btn" onclick="closeImagePop()">X</span>
+  </div>
+
+  <!--image Galleries-->
+  <div class="lightboxContainer">   
+    <div class="imageGallery" data-category="men">
+      <img src="/images/image1.jpg" alt="men 1" data-index="0" onclick="openImagePop(0)">
+      <img src="/images/image2.jpg" alt="men 2" data-index="1" onclick="openImagePop(1)">
+      <img src="/images/image3.jpg" alt="men 3" data-index="2" onclick="openImagePop(2)">
+      <img src="/images/image4.jpg" alt="men 4" data-index="3" onclick="openImagePop(3)">
+    </div>
+
+    <div class="imageGallery" data-category="women">
+      <img src="/images/image5.jpg" alt="women 1" data-index="4" onclick="openImagePop(4)">
+      <img src="/images/image6.jpg" alt="women 2" data-index="5" onclick="openImagePop(5)">
+      <img src="/images/image7.jpg" alt="women 3" data-index="6" onclick="openImagePop(6)">
+      <img src="/images/image8.jpg" alt="women 4" data-index="7" onclick="openImagePop(7)">
+    </div>
+
+    <div class="imageGallery" data-category="kids">
+      <img src="/images/image9.jpg"  alt="kid 1"  data-index="8" onclick="openImagePop(8)">
+      <img src="/images/image10.jpg" alt="kid 2"  data-index="9" onclick="openImagePop(9)">
+      <img src="/images/image11.jpg" alt="kid 3"  data-index="10" onclick="openImagePop(10)">
+      <img src="/images/image12.jpg" alt="kid 4"  data-index="11" onclick="openImagePop(11)">
+      <img src="/images/image13.jpg" alt="kid 5"  data-index="12" onclick="openImagePop(12)">
+      <img src="/images/image14.jpg" alt="kid 6"  data-index="13" onclick="openImagePop(13)">
+      <img src="/images/image15.jpg" alt="kid 7"  data-index="14" onclick="openImagePop(14)">
+      <img src="/images/image16.jpg" alt="kid 8"  data-index="15" onclick="openImagePop(15)">
+    </div>
+
+    <div class="imageGallery" data-category="shoes">
+      <img src="/images/image17.jpg" alt="shoe 1" data-index="16" onclick="openImagePop(16)">
+      <img src="/images/image18.jpg" alt="shoe 2" data-index="17" onclick="openImagePop(17)">
+      <img src="/images/image19.jpg" alt="shoe 3" data-index="18" onclick="openImagePop(18)">
+      <img src="/images/image20.jpg" alt="shoe 4" data-index="19" onclick="openImagePop(19)">
+      <img src="/images/image21.jpg" alt="shoe 5" data-index="20" onclick="openImagePop(20)">
+      <img src="/images/image22.jpg" alt="shoe 6" data-index="21" onclick="openImagePop(21)">
+      <img src="/images/image23.jpg" alt="shoe 7" data-index="22" onclick="openImagePop(22)">
+      <img src="/images/image24.jpg" alt="shoe 8" data-index="23" onclick="openImagePop(23)">
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
