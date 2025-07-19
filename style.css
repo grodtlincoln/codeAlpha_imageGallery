@@ -150,7 +150,7 @@ body {
 
 .close-btn {
   position: absolute;
-  top: 20%;
+  top: 19%;
   right: 25%;
   color: white;
   font-size: 25px;
@@ -159,8 +159,8 @@ body {
 
 @media (max-width: 768px) {
   .lightbox img {
-    width: 95%;
-    max-width: 70%;
+    width: 80%;
+    max-width: 60%;
   }
 
 .nav {
